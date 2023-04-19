@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furits Vally</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sticky.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            <a href="#">FRUITS VALLY</a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- hader section start -->
+
+      <section class="head_section">
+        <div class="headrow">
+            <h1>Get fresh fruits</h1>
+        </div>
+      </section>
+
+      <!-- hader section end -->
+
+      <!-- fruits shop section start -->
+
+      <section class="fruits_section">
+        <h2>FRUITS SHOP</h2>
+        <p>There are many variations of passages of Lorem Ipsum available</p>
+        <div class="apple_furit">
+            <img src="photo/Apple-img.png" alt="">
+        </div>
+        <div class="fruit_buy">
+            <a href="#">Buy Now</a>
+        </div>
+      </section>
+      <!-- fruits shop section end -->
+
+    <!-- About section start -->
+
+    <section class="about_section">
+        <div class="row">
+            <div class="about_img">
+                <img src="photo/mixer-fruit.png" alt="">
+            </div>
+            <div class="content">
+                <h2>About Our Fruit Shop</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                <button class="read_btn">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section end -->
+
+      <!-- fruits section start -->
+
+      <section class="fruit_sec">
+        <h2>Fresh Fruits</h2>
+        <div class="fruit_row">
+            <div class="fruit">
+                <img src="photo/Angur-fruit.png" alt="">
+                <button>Buy Now</button>
+            </div>
+            <div class="fruit">
+                <img src="photo/banana.png" alt="">
+                <button>Buy Now</button>
+            </div>
+            <div class="fruit">
+                <img src="photo/apple.png" alt="">
+                <button>Buy Now</button>
+            </div>
+            <div class="fruit">
+                <img src="photo/banana.png" alt="">
+                <button>Buy Now</button>
+            </div>
+            <div class="fruit">
+                <img src="photo/mango.png" alt="">
+                <button>Buy Now</button>
+            </div>
+            <div class="fruit">
+                <img src="photo/strabary.png" alt="">
+                <button>Buy Now</button>
+            </div>
+        </div>
+      </section>
+
+
+      <!-- fruits section end -->
+
+      <!-- testimonial section start -->
+
+      <section class="testimonial_sec">
+        <h2>What Says Customar</h2>
+        <div class="customar">
+            <img src="photo/customar.png" alt="">
+            <h4>Jone Mark</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+        </div>
+      </section>
+      <!-- testimonial section end -->
+
+          <!-- contact section start -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Request a call back</h2>
+        <div class="row">
+            <form action="">
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="text" placeholder="Enter Your Address">
+                </div>
+                <div class="inputBox">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write Your Comment"></textarea>
+                </div>
+                <input type="submit" value="contact now" class="contact_btn">
+            </form>
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1629452077891!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <!-- contact section end -->
+
+    <footer>
+        <p>&copy All Rights Reserved by Muhammad Emon</p>
+    </footer>
+
+
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+</body>
+</html>

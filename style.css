@@ -1,0 +1,341 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+body{
+    /* background-color: var(--color2); */
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    --color1: #fff;
+    --color2: #181818;
+
+  }
+
+  /* header section start */
+
+  .head_section{
+    background-image: url(photo/header-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #FEDB38;
+    background-blend-mode: multiply;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head_section .headrow h1{
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+  /* header section end */
+
+  /* fruits shop section start */
+
+  .fruits_section{
+    text-align: center;
+  }
+.fruits_section h2{
+    font-size: 5rem;
+    color: #000;
+    padding: 5rem 0rem;
+}
+.fruits_section p{
+    font-size: 1.8rem;
+    color: #000;
+}
+.fruits_section .fruit_buy a{
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #000;
+    padding: 1.8rem 5rem;
+}
+.fruits_section .fruit_buy a:hover{
+    color: #000;
+    background-color: orange;
+
+}
+.fruits_section .fruit_buy{
+    padding: 5rem 0rem;
+}
+ .fruits_section .apple_furit img{
+    width: 50%;
+ }
+  /* fruits shop section end */
+
+
+  /* about section start */
+
+.about_section{
+    padding:10% 7%;
+}
+.about_section .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about_section .row .about_img{
+    flex:1 1 45rem;
+    width: 45rem;
+}
+.about_section .row .about_img img{
+    width: 100%;
+}
+.about_section .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+    text-align: center;
+}
+.about_section .row .content h2{
+    font-size: 3rem;
+    color:#000;
+}
+.about_section p{
+    font-size: 2rem;
+    margin-top: 3rem;
+    line-height: 3rem;
+    color: #000;
+}
+.about_section .read_btn{
+    width: 13rem;
+    height: 5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    margin-top: 2rem;
+    font-size: 2rem;
+
+}
+.about_section .read_btn:hover{
+    background-color: orange;
+    color:#000;
+}
+
+/* about section end */
+
+  /* fruits section start */
+
+  .fruit_sec{
+    padding: 2% 7%;
+  }
+  .fruit_sec h2{
+    font-size: 6rem;
+    color: #000;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+  .fruit_sec .fruit_row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  }
+  .fruit_row .fruit img{
+    width: 100%;
+    height: 100%;
+  }
+  .fruit_row .fruit{
+    position: relative;
+  }
+
+.fruit button{
+    display: none;
+    width: 12rem;
+    height: 4rem;
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9;
+}
+.fruit:hover button{
+    display: block;
+}
+
+  /* fruits section end */
+
+  /* testimonial section start  */
+
+  .testimonial_sec{
+    text-align: center;
+    padding: 3% 7%;
+  }
+  .testimonial_sec h2{
+    font-size: 4rem;
+    color: #000;
+    padding: 4rem 0rem;
+  }
+  .testimonial_sec .customar img{
+    border-radius: 50%;
+  }
+  .testimonial_sec .customar h4{
+    font-size: 3rem;
+    color: #000;
+    padding: 3rem 0rem;
+  }
+  .testimonial_sec .customar p{
+    font-size: 1.8rem;
+    color: #000;
+    padding: 0% 15%;
+    line-height: 26px;
+  }
+  /* testimonial section end  */
+
+  /* contact section start */
+
+.contact{
+    padding: 4% 7%;
+}
+.contact .heading{
+    text-align: center;
+    color: #000;
+    font-size: 5rem;
+    padding: 4rem 0rem;
+}
+form{
+    padding: 0rem 2rem;
+}
+.contact .row{
+    display: flex;
+    background:var(--black);
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:2rem 2rem;
+    text-align: center;
+}
+
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact .row form .inputBox span{
+    color:#000;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:#000;
+    text-transform: none;
+    background:none;
+}
+.contact .row .contact_btn{
+    width: 13rem;
+    height: 5rem;
+    color: #fff;
+    background-color: #181818;
+    font-size: 1.8rem;
+}
+.contact .row .contact_btn:hover{
+    background-color: #FEDB38;
+    color: #000;
+}
+.inputBox textarea{
+    width: 100%;
+    padding-top: 4rem;
+    padding-left: 4rem;
+}
+.inputBox textarea{
+    font-size: 1.7rem;
+}
+
+.contact .row .map{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+iframe{
+    width: 100%;
+    height: 50rem;
+}
+
+footer p{
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding: 4rem 0rem;
+    font-size: 1.8rem;
+}
+
+/* contact section end */
+
+
+  @media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    .headrow .headimg{
+        display: none;
+    }
+
+}
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
